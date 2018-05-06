@@ -1,0 +1,946 @@
+tungnt244@tungnt244:~/Downloads/anago-master$ python run.py
+Using TensorFlow backend.
+2018-05-02 21:29:21.144543: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+Epoch 1/15
+62/63 [============================>.] - ETA: 1s - loss: 330.2553  
+Tag-based evaluation.
+/usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+              precision    recall  f1-score   support
+
+B-ACCOM_NAME       0.00      0.00      0.00        31
+       B-BRD       0.00      0.00      0.00         7
+       B-CTT       0.00      0.00      0.00        26
+       B-CTX       0.00      0.00      0.00        66
+      B-DEST       0.00      0.00      0.00       523
+       B-DPT       0.00      0.00      0.00        97
+       B-INT       0.00      0.00      0.00       453
+       B-OBJ       0.00      0.00      0.00        50
+   B-OBJ_DES       0.00      0.00      0.00        37
+   B-OBJ_NUM       0.00      0.00      0.00        14
+   B-PPL_NUM       0.00      0.00      0.00       124
+       B-PRC       0.00      0.00      0.00        61
+  B-TIME_PNT       0.00      0.00      0.00       399
+  B-TIME_PRD       0.00      0.00      0.00       122
+       B-TRP       0.00      0.00      0.00        58
+I-ACCOM_NAME       0.00      0.00      0.00        27
+       I-BRD       0.00      0.00      0.00         6
+       I-CTT       0.00      0.00      0.00        74
+       I-CTX       0.00      0.00      0.00       109
+      I-DEST       0.00      0.00      0.00       376
+       I-DPT       0.00      0.00      0.00        97
+       I-INT       0.00      0.00      0.00       276
+       I-OBJ       0.00      0.00      0.00         9
+   I-OBJ_DES       0.00      0.00      0.00        53
+   I-PPL_NUM       0.00      0.00      0.00         2
+       I-PRC       0.00      0.00      0.00        65
+  I-TIME_PNT       0.00      0.00      0.00       647
+  I-TIME_PRD       0.00      0.00      0.00       156
+       I-TRP       0.00      0.00      0.00        36
+           O       0.83      1.00      0.91     19119
+
+ avg / total       0.68      0.83      0.75     23120
+
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.00       0.00      0.00        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT     0.00       0.00      0.00       399
+   OBJ_NUM     0.00       0.00      0.00        14
+       PRC     0.00       0.00      0.00        61
+       INT     0.00       0.00      0.00       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.00       0.00      0.00       122
+      DEST     0.00       0.00      0.00       523
+   PPL_NUM     0.00       0.00      0.00       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.00       0.00      0.00        50
+
+avg / total     0.00      0.00      0.00      2068
+ - f1: 0.00
+63/63 [==============================] - 132s 2s/step - loss: 326.9670
+Epoch 2/15
+62/63 [============================>.] - ETA: 2s - loss: 293.7664  
+Tag-based evaluation.
+              precision    recall  f1-score   support
+
+B-ACCOM_NAME       0.00      0.00      0.00        31
+       B-BRD       0.00      0.00      0.00         7
+       B-CTT       0.00      0.00      0.00        26
+       B-CTX       0.00      0.00      0.00        66
+      B-DEST       0.09      0.01      0.01       523
+       B-DPT       0.00      0.00      0.00        97
+       B-INT       0.00      0.00      0.00       453
+       B-OBJ       0.00      0.00      0.00        50
+   B-OBJ_DES       0.00      0.00      0.00        37
+   B-OBJ_NUM       0.00      0.00      0.00        14
+   B-PPL_NUM       0.00      0.00      0.00       124
+       B-PRC       0.00      0.00      0.00        61
+  B-TIME_PNT       0.80      0.01      0.02       399
+  B-TIME_PRD       0.00      0.00      0.00       122
+       B-TRP       0.00      0.00      0.00        58
+I-ACCOM_NAME       0.00      0.00      0.00        27
+       I-BRD       0.00      0.00      0.00         6
+       I-CTT       0.00      0.00      0.00        74
+       I-CTX       0.00      0.00      0.00       109
+      I-DEST       0.00      0.00      0.00       376
+       I-DPT       0.00      0.00      0.00        97
+       I-INT       0.00      0.00      0.00       276
+       I-OBJ       0.00      0.00      0.00         9
+   I-OBJ_DES       0.00      0.00      0.00        53
+   I-PPL_NUM       0.00      0.00      0.00         2
+       I-PRC       0.00      0.00      0.00        65
+  I-TIME_PNT       0.46      0.01      0.02       647
+  I-TIME_PRD       0.00      0.00      0.00       156
+       I-TRP       0.00      0.00      0.00        36
+           O       0.83      1.00      0.91     19119
+
+ avg / total       0.71      0.83      0.75     23120
+
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.00       0.00      0.00        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT     0.00       0.00      0.00       399
+   OBJ_NUM     0.00       0.00      0.00        14
+       PRC     0.00       0.00      0.00        61
+       INT     0.00       0.00      0.00       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.00       0.00      0.00       122
+      DEST     0.00       0.00      0.00       523
+   PPL_NUM     0.00       0.00      0.00       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.00       0.00      0.00        50
+
+avg / total     0.00      0.00      0.00      2068
+ - f1: 0.00
+63/63 [==============================] - 146s 2s/step - loss: 290.8951
+Epoch 3/15
+62/63 [============================>.] - ETA: 2s - loss: 281.3630  
+Tag-based evaluation.
+              precision    recall  f1-score   support
+
+B-ACCOM_NAME       0.00      0.00      0.00        31
+       B-BRD       0.00      0.00      0.00         7
+       B-CTT       0.00      0.00      0.00        26
+       B-CTX       0.00      0.00      0.00        66
+      B-DEST       0.20      0.18      0.19       523
+       B-DPT       0.00      0.00      0.00        97
+       B-INT       0.24      0.17      0.20       453
+       B-OBJ       0.00      0.00      0.00        50
+   B-OBJ_DES       0.00      0.00      0.00        37
+   B-OBJ_NUM       0.00      0.00      0.00        14
+   B-PPL_NUM       0.00      0.00      0.00       124
+       B-PRC       0.00      0.00      0.00        61
+  B-TIME_PNT       0.53      0.58      0.56       399
+  B-TIME_PRD       0.00      0.00      0.00       122
+       B-TRP       0.00      0.00      0.00        58
+I-ACCOM_NAME       0.00      0.00      0.00        27
+       I-BRD       0.00      0.00      0.00         6
+       I-CTT       0.41      0.09      0.15        74
+       I-CTX       0.00      0.00      0.00       109
+      I-DEST       0.00      0.00      0.00       376
+       I-DPT       0.00      0.00      0.00        97
+       I-INT       0.00      0.00      0.00       276
+       I-OBJ       0.00      0.00      0.00         9
+   I-OBJ_DES       0.00      0.00      0.00        53
+   I-PPL_NUM       0.00      0.00      0.00         2
+       I-PRC       0.00      0.00      0.00        65
+  I-TIME_PNT       0.50      0.70      0.59       647
+  I-TIME_PRD       0.00      0.00      0.00       156
+       I-TRP       0.00      0.00      0.00        36
+           O       0.90      0.99      0.94     19119
+
+ avg / total       0.78      0.86      0.82     23120
+
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.00       0.00      0.00        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT     0.39       0.43      0.41       399
+   OBJ_NUM     0.00       0.00      0.00        14
+       PRC     0.00       0.00      0.00        61
+       INT     0.12       0.09      0.10       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.00       0.00      0.00       122
+      DEST     0.10       0.09      0.10       523
+   PPL_NUM     0.00       0.00      0.00       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.00       0.00      0.00        50
+
+avg / total     0.13      0.12      0.13      2068
+ - f1: 16.26
+63/63 [==============================] - 134s 2s/step - loss: 278.5519
+Epoch 4/15
+62/63 [============================>.] - ETA: 2s - loss: 273.4759  
+Tag-based evaluation.
+              precision    recall  f1-score   support
+
+B-ACCOM_NAME       0.00      0.00      0.00        31
+       B-BRD       0.00      0.00      0.00         7
+       B-CTT       0.00      0.00      0.00        26
+       B-CTX       0.00      0.00      0.00        66
+      B-DEST       0.24      0.45      0.31       523
+       B-DPT       0.00      0.00      0.00        97
+       B-INT       0.46      0.60      0.52       453
+       B-OBJ       0.00      0.00      0.00        50
+   B-OBJ_DES       0.00      0.00      0.00        37
+   B-OBJ_NUM       0.00      0.00      0.00        14
+   B-PPL_NUM       0.00      0.00      0.00       124
+       B-PRC       0.50      0.02      0.03        61
+  B-TIME_PNT       0.53      0.73      0.62       399
+  B-TIME_PRD       0.00      0.00      0.00       122
+       B-TRP       0.00      0.00      0.00        58
+I-ACCOM_NAME       0.00      0.00      0.00        27
+       I-BRD       0.00      0.00      0.00         6
+       I-CTT       0.34      0.16      0.22        74
+       I-CTX       0.00      0.00      0.00       109
+      I-DEST       0.00      0.00      0.00       376
+       I-DPT       0.00      0.00      0.00        97
+       I-INT       0.00      0.00      0.00       276
+       I-OBJ       0.00      0.00      0.00         9
+   I-OBJ_DES       0.00      0.00      0.00        53
+   I-PPL_NUM       0.00      0.00      0.00         2
+       I-PRC       0.00      0.00      0.00        65
+  I-TIME_PNT       0.58      0.78      0.67       647
+  I-TIME_PRD       0.00      0.00      0.00       156
+       I-TRP       0.00      0.00      0.00        36
+           O       0.93      0.98      0.96     19119
+
+ avg / total       0.81      0.87      0.84     23120
+
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.00       0.00      0.00        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT     0.40       0.55      0.46       399
+   OBJ_NUM     0.00       0.00      0.00        14
+       PRC     0.00       0.00      0.00        61
+       INT     0.26       0.34      0.29       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.00       0.00      0.00       122
+      DEST     0.10       0.20      0.14       523
+   PPL_NUM     0.00       0.00      0.00       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.00       0.00      0.00        50
+
+avg / total     0.16      0.23      0.19      2068
+ - f1: 22.66
+63/63 [==============================] - 142s 2s/step - loss: 270.7124
+Epoch 5/15
+62/63 [============================>.] - ETA: 2s - loss: 266.8839  
+Tag-based evaluation.
+              precision    recall  f1-score   support
+
+B-ACCOM_NAME       0.00      0.00      0.00        31
+       B-BRD       0.00      0.00      0.00         7
+       B-CTT       0.83      0.19      0.31        26
+       B-CTX       0.00      0.00      0.00        66
+      B-DEST       0.34      0.72      0.46       523
+       B-DPT       0.00      0.00      0.00        97
+       B-INT       0.61      0.69      0.65       453
+       B-OBJ       0.00      0.00      0.00        50
+   B-OBJ_DES       0.00      0.00      0.00        37
+   B-OBJ_NUM       0.00      0.00      0.00        14
+   B-PPL_NUM       0.57      0.19      0.29       124
+       B-PRC       0.22      0.10      0.14        61
+  B-TIME_PNT       0.65      0.76      0.70       399
+  B-TIME_PRD       0.00      0.00      0.00       122
+       B-TRP       0.00      0.00      0.00        58
+I-ACCOM_NAME       0.00      0.00      0.00        27
+       I-BRD       0.00      0.00      0.00         6
+       I-CTT       0.60      0.36      0.45        74
+       I-CTX       0.00      0.00      0.00       109
+      I-DEST       0.57      0.31      0.40       376
+       I-DPT       0.00      0.00      0.00        97
+       I-INT       0.65      0.17      0.27       276
+       I-OBJ       0.00      0.00      0.00         9
+   I-OBJ_DES       0.00      0.00      0.00        53
+   I-PPL_NUM       0.00      0.00      0.00         2
+       I-PRC       0.00      0.00      0.00        65
+  I-TIME_PNT       0.71      0.77      0.74       647
+  I-TIME_PRD       0.00      0.00      0.00       156
+       I-TRP       0.00      0.00      0.00        36
+           O       0.94      0.98      0.96     19119
+
+ avg / total       0.85      0.88      0.86     23120
+
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.83       0.19      0.31        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT     0.48       0.57      0.52       399
+   OBJ_NUM     0.00       0.00      0.00        14
+       PRC     0.07       0.03      0.05        61
+       INT     0.37       0.42      0.40       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.00       0.00      0.00       122
+      DEST     0.21       0.44      0.28       523
+   PPL_NUM     0.57       0.19      0.29       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.00       0.00      0.00        50
+
+avg / total     0.27      0.33      0.28      2068
+ - f1: 32.10
+63/63 [==============================] - 139s 2s/step - loss: 264.1398
+Epoch 6/15
+62/63 [============================>.] - ETA: 2s - loss: 261.6998  
+Tag-based evaluation.
+              precision    recall  f1-score   support
+
+B-ACCOM_NAME       0.00      0.00      0.00        31
+       B-BRD       0.00      0.00      0.00         7
+       B-CTT       0.85      0.42      0.56        26
+       B-CTX       0.00      0.00      0.00        66
+      B-DEST       0.43      0.75      0.54       523
+       B-DPT       0.00      0.00      0.00        97
+       B-INT       0.75      0.74      0.75       453
+       B-OBJ       1.00      0.02      0.04        50
+   B-OBJ_DES       0.00      0.00      0.00        37
+   B-OBJ_NUM       0.00      0.00      0.00        14
+   B-PPL_NUM       0.56      0.60      0.58       124
+       B-PRC       0.32      0.18      0.23        61
+  B-TIME_PNT       0.71      0.79      0.74       399
+  B-TIME_PRD       0.27      0.03      0.06       122
+       B-TRP       0.00      0.00      0.00        58
+I-ACCOM_NAME       0.00      0.00      0.00        27
+       I-BRD       0.00      0.00      0.00         6
+       I-CTT       0.85      0.59      0.70        74
+       I-CTX       0.00      0.00      0.00       109
+      I-DEST       0.48      0.56      0.52       376
+       I-DPT       0.00      0.00      0.00        97
+       I-INT       0.60      0.54      0.57       276
+       I-OBJ       0.00      0.00      0.00         9
+   I-OBJ_DES       0.00      0.00      0.00        53
+   I-PPL_NUM       0.00      0.00      0.00         2
+       I-PRC       0.00      0.00      0.00        65
+  I-TIME_PNT       0.75      0.79      0.77       647
+  I-TIME_PRD       0.82      0.15      0.25       156
+       I-TRP       0.00      0.00      0.00        36
+           O       0.95      0.97      0.96     19119
+
+ avg / total       0.87      0.90      0.88     23120
+
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.85       0.42      0.56        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT     0.54       0.60      0.57       399
+   OBJ_NUM     0.00       0.00      0.00        14
+       PRC     0.09       0.05      0.06        61
+       INT     0.53       0.52      0.53       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.27       0.03      0.06       122
+      DEST     0.33       0.58      0.42       523
+   PPL_NUM     0.56       0.60      0.58       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     1.00       0.02      0.04        50
+
+avg / total     0.39      0.42      0.38      2068
+ - f1: 43.19
+63/63 [==============================] - 137s 2s/step - loss: 258.9898
+Epoch 7/15
+62/63 [============================>.] - ETA: 1s - loss: 257.8965  
+Tag-based evaluation.
+              precision    recall  f1-score   support
+
+B-ACCOM_NAME       0.00      0.00      0.00        31
+       B-BRD       0.00      0.00      0.00         7
+       B-CTT       0.87      0.50      0.63        26
+       B-CTX       0.00      0.00      0.00        66
+      B-DEST       0.52      0.76      0.62       523
+       B-DPT       0.00      0.00      0.00        97
+       B-INT       0.81      0.73      0.77       453
+       B-OBJ       0.60      0.18      0.28        50
+   B-OBJ_DES       0.00      0.00      0.00        37
+   B-OBJ_NUM       0.86      0.43      0.57        14
+   B-PPL_NUM       0.62      0.75      0.68       124
+       B-PRC       0.37      0.33      0.35        61
+  B-TIME_PNT       0.71      0.82      0.76       399
+  B-TIME_PRD       0.64      0.29      0.40       122
+       B-TRP       0.00      0.00      0.00        58
+I-ACCOM_NAME       0.00      0.00      0.00        27
+       I-BRD       0.00      0.00      0.00         6
+       I-CTT       0.86      0.69      0.77        74
+       I-CTX       0.00      0.00      0.00       109
+      I-DEST       0.53      0.63      0.57       376
+       I-DPT       0.00      0.00      0.00        97
+       I-INT       0.67      0.69      0.68       276
+       I-OBJ       0.00      0.00      0.00         9
+   I-OBJ_DES       0.00      0.00      0.00        53
+   I-PPL_NUM       0.00      0.00      0.00         2
+       I-PRC       1.00      0.03      0.06        65
+  I-TIME_PNT       0.80      0.80      0.80       647
+  I-TIME_PRD       0.81      0.45      0.58       156
+       I-TRP       0.00      0.00      0.00        36
+           O       0.95      0.98      0.96     19119
+
+ avg / total       0.88      0.91      0.89     23120
+
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.87       0.50      0.63        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT     0.55       0.63      0.59       399
+   OBJ_NUM     0.86       0.43      0.57        14
+       PRC     0.15       0.13      0.14        61
+      DEST     0.42       0.62      0.50       523
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.53       0.24      0.33       122
+       INT     0.64       0.58      0.60       453
+   PPL_NUM     0.62       0.74      0.67       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.60       0.18      0.28        50
+
+avg / total     0.46      0.48      0.46      2068
+ - f1: 50.68
+63/63 [==============================] - 122s 2s/step - loss: 255.1865
+Epoch 8/15
+62/63 [============================>.] - ETA: 1s - loss: 254.7705  
+Tag-based evaluation.
+              precision    recall  f1-score   support
+
+B-ACCOM_NAME       0.00      0.00      0.00        31
+       B-BRD       0.00      0.00      0.00         7
+       B-CTT       0.70      0.54      0.61        26
+       B-CTX       0.00      0.00      0.00        66
+      B-DEST       0.58      0.77      0.66       523
+       B-DPT       0.00      0.00      0.00        97
+       B-INT       0.78      0.76      0.77       453
+       B-OBJ       0.64      0.28      0.39        50
+   B-OBJ_DES       0.50      0.03      0.05        37
+   B-OBJ_NUM       0.79      0.79      0.79        14
+   B-PPL_NUM       0.67      0.82      0.74       124
+       B-PRC       0.49      0.51      0.50        61
+  B-TIME_PNT       0.73      0.83      0.78       399
+  B-TIME_PRD       0.74      0.55      0.63       122
+       B-TRP       0.00      0.00      0.00        58
+I-ACCOM_NAME       0.00      0.00      0.00        27
+       I-BRD       0.00      0.00      0.00         6
+       I-CTT       0.92      0.66      0.77        74
+       I-CTX       0.00      0.00      0.00       109
+      I-DEST       0.60      0.67      0.63       376
+       I-DPT       0.00      0.00      0.00        97
+       I-INT       0.67      0.69      0.68       276
+       I-OBJ       0.00      0.00      0.00         9
+   I-OBJ_DES       0.67      0.04      0.07        53
+   I-PPL_NUM       0.00      0.00      0.00         2
+       I-PRC       0.89      0.12      0.22        65
+  I-TIME_PNT       0.81      0.82      0.81       647
+  I-TIME_PRD       0.77      0.72      0.74       156
+       I-TRP       0.00      0.00      0.00        36
+           O       0.95      0.97      0.96     19119
+
+ avg / total       0.89      0.91      0.90     23120
+
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.70       0.54      0.61        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT     0.57       0.65      0.61       399
+   OBJ_NUM     0.79       0.79      0.79        14
+       PRC     0.29       0.30      0.29        61
+       INT     0.61       0.59      0.60       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.70       0.52      0.60       122
+      DEST     0.50       0.66      0.57       523
+   PPL_NUM     0.66       0.81      0.73       124
+   OBJ_DES     0.50       0.03      0.05        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.64       0.28      0.39        50
+
+avg / total     0.50      0.53      0.50      2068
+ - f1: 55.66
+63/63 [==============================] - 119s 2s/step - loss: 252.0734
+Epoch 9/15
+62/63 [============================>.] - ETA: 1s - loss: 252.3998  
+Tag-based evaluation.
+              precision    recall  f1-score   support
+
+B-ACCOM_NAME       0.00      0.00      0.00        31
+       B-BRD       0.00      0.00      0.00         7
+       B-CTT       0.76      0.73      0.75        26
+       B-CTX       0.00      0.00      0.00        66
+      B-DEST       0.62      0.78      0.69       523
+       B-DPT       0.00      0.00      0.00        97
+       B-INT       0.81      0.75      0.78       453
+       B-OBJ       0.69      0.36      0.47        50
+   B-OBJ_DES       0.17      0.03      0.05        37
+   B-OBJ_NUM       0.69      0.79      0.73        14
+   B-PPL_NUM       0.70      0.83      0.76       124
+       B-PRC       0.71      0.69      0.70        61
+  B-TIME_PNT       0.77      0.83      0.80       399
+  B-TIME_PRD       0.75      0.68      0.72       122
+       B-TRP       0.00      0.00      0.00        58
+I-ACCOM_NAME       0.00      0.00      0.00        27
+       I-BRD       0.00      0.00      0.00         6
+       I-CTT       0.90      0.86      0.88        74
+       I-CTX       0.00      0.00      0.00       109
+      I-DEST       0.60      0.69      0.65       376
+       I-DPT       0.00      0.00      0.00        97
+       I-INT       0.66      0.72      0.69       276
+       I-OBJ       0.00      0.00      0.00         9
+   I-OBJ_DES       0.57      0.08      0.13        53
+   I-PPL_NUM       0.00      0.00      0.00         2
+       I-PRC       0.90      0.28      0.42        65
+  I-TIME_PNT       0.83      0.84      0.84       647
+  I-TIME_PRD       0.81      0.81      0.81       156
+       I-TRP       0.00      0.00      0.00        36
+           O       0.95      0.98      0.97     19119
+
+ avg / total       0.90      0.92      0.91     23120
+
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.76       0.73      0.75        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT     0.62       0.67      0.65       399
+   OBJ_NUM     0.69       0.79      0.73        14
+       PRC     0.49       0.48      0.48        61
+       INT     0.65       0.61      0.63       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.70       0.63      0.66       122
+      DEST     0.54       0.68      0.60       523
+   PPL_NUM     0.69       0.82      0.75       124
+   OBJ_DES     0.17       0.03      0.05        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.69       0.36      0.47        50
+
+avg / total     0.53      0.56      0.54      2068
+ - f1: 59.39
+63/63 [==============================] - 114s 2s/step - loss: 249.7160
+Epoch 10/15
+62/63 [============================>.] - ETA: 1s - loss: 250.3655  
+Tag-based evaluation.
+              precision    recall  f1-score   support
+
+B-ACCOM_NAME       0.00      0.00      0.00        31
+       B-BRD       0.00      0.00      0.00         7
+       B-CTT       0.80      0.77      0.78        26
+       B-CTX       0.00      0.00      0.00        66
+      B-DEST       0.64      0.77      0.70       523
+       B-DPT       0.00      0.00      0.00        97
+       B-INT       0.81      0.75      0.78       453
+       B-OBJ       0.59      0.44      0.51        50
+   B-OBJ_DES       0.18      0.05      0.08        37
+   B-OBJ_NUM       0.61      0.79      0.69        14
+   B-PPL_NUM       0.72      0.85      0.78       124
+       B-PRC       0.77      0.67      0.72        61
+  B-TIME_PNT       0.79      0.84      0.81       399
+  B-TIME_PRD       0.75      0.74      0.74       122
+       B-TRP       1.00      0.02      0.03        58
+I-ACCOM_NAME       0.00      0.00      0.00        27
+       I-BRD       0.00      0.00      0.00         6
+       I-CTT       0.91      0.85      0.88        74
+       I-CTX       0.00      0.00      0.00       109
+      I-DEST       0.61      0.71      0.65       376
+       I-DPT       0.00      0.00      0.00        97
+       I-INT       0.66      0.75      0.70       276
+       I-OBJ       0.00      0.00      0.00         9
+   I-OBJ_DES       0.25      0.11      0.16        53
+   I-PPL_NUM       0.00      0.00      0.00         2
+       I-PRC       0.92      0.34      0.49        65
+  I-TIME_PNT       0.84      0.86      0.85       647
+  I-TIME_PRD       0.81      0.85      0.83       156
+       I-TRP       0.00      0.00      0.00        36
+           O       0.95      0.98      0.96     19119
+
+ avg / total       0.90      0.92      0.91     23120
+
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.80       0.77      0.78        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT     0.65       0.69      0.67       399
+   OBJ_NUM     0.61       0.79      0.69        14
+       PRC     0.53       0.46      0.49        61
+       INT     0.67       0.62      0.65       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.68       0.66      0.67       122
+      DEST     0.59       0.70      0.64       523
+   PPL_NUM     0.71       0.85      0.77       124
+   OBJ_DES     0.09       0.03      0.04        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.59       0.44      0.51        50
+
+avg / total     0.55      0.58      0.56      2068
+ - f1: 61.57
+63/63 [==============================] - 116s 2s/step - loss: 247.6959
+Epoch 11/15
+62/63 [============================>.] - ETA: 1s - loss: 248.8798  
+Tag-based evaluation.
+              precision    recall  f1-score   support
+
+B-ACCOM_NAME       0.00      0.00      0.00        31
+       B-BRD       0.00      0.00      0.00         7
+       B-CTT       0.81      0.85      0.83        26
+       B-CTX       0.00      0.00      0.00        66
+      B-DEST       0.65      0.80      0.72       523
+       B-DPT       1.00      0.01      0.02        97
+       B-INT       0.80      0.77      0.79       453
+       B-OBJ       0.56      0.54      0.55        50
+   B-OBJ_DES       0.36      0.11      0.17        37
+   B-OBJ_NUM       0.50      0.79      0.61        14
+   B-PPL_NUM       0.76      0.90      0.82       124
+       B-PRC       0.81      0.77      0.79        61
+  B-TIME_PNT       0.81      0.85      0.83       399
+  B-TIME_PRD       0.77      0.78      0.77       122
+       B-TRP       0.77      0.17      0.28        58
+I-ACCOM_NAME       0.00      0.00      0.00        27
+       I-BRD       0.00      0.00      0.00         6
+       I-CTT       0.90      0.89      0.90        74
+       I-CTX       0.00      0.00      0.00       109
+      I-DEST       0.61      0.75      0.67       376
+       I-DPT       0.00      0.00      0.00        97
+       I-INT       0.66      0.76      0.71       276
+       I-OBJ       0.00      0.00      0.00         9
+   I-OBJ_DES       0.30      0.15      0.20        53
+   I-PPL_NUM       0.00      0.00      0.00         2
+       I-PRC       0.96      0.38      0.55        65
+  I-TIME_PNT       0.84      0.87      0.85       647
+  I-TIME_PRD       0.82      0.85      0.84       156
+       I-TRP       0.67      0.11      0.19        36
+           O       0.96      0.97      0.97     19119
+
+ avg / total       0.91      0.92      0.91     23120
+
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.81       0.85      0.83        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT     0.67       0.70      0.68       399
+   OBJ_NUM     0.50       0.79      0.61        14
+       PRC     0.57       0.54      0.55        61
+       INT     0.69       0.66      0.67       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.69       0.70      0.70       122
+      DEST     0.60       0.74      0.66       523
+   PPL_NUM     0.75       0.89      0.81       124
+   OBJ_DES     0.27       0.08      0.12        37
+       TRP     0.38       0.09      0.14        58
+       OBJ     0.54       0.52      0.53        50
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+
+avg / total     0.58      0.61      0.59      2068
+ - f1: 63.81
+63/63 [==============================] - 113s 2s/step - loss: 246.2089
+Epoch 12/15
+62/63 [============================>.] - ETA: 1s - loss: 247.3674  
+Tag-based evaluation.
+              precision    recall  f1-score   support
+
+B-ACCOM_NAME       0.33      0.03      0.06        31
+       B-BRD       0.00      0.00      0.00         7
+       B-CTT       0.87      0.77      0.82        26
+       B-CTX       1.00      0.08      0.14        66
+      B-DEST       0.67      0.79      0.73       523
+       B-DPT       1.00      0.02      0.04        97
+       B-INT       0.82      0.77      0.79       453
+       B-OBJ       0.55      0.56      0.55        50
+   B-OBJ_DES       0.56      0.27      0.36        37
+   B-OBJ_NUM       0.46      0.79      0.58        14
+   B-PPL_NUM       0.77      0.90      0.83       124
+       B-PRC       0.83      0.79      0.81        61
+  B-TIME_PNT       0.82      0.85      0.83       399
+  B-TIME_PRD       0.79      0.81      0.80       122
+       B-TRP       0.79      0.26      0.39        58
+I-ACCOM_NAME       0.00      0.00      0.00        27
+       I-BRD       0.00      0.00      0.00         6
+       I-CTT       0.92      0.88      0.90        74
+       I-CTX       1.00      0.12      0.21       109
+      I-DEST       0.63      0.74      0.69       376
+       I-DPT       0.00      0.00      0.00        97
+       I-INT       0.71      0.74      0.73       276
+       I-OBJ       0.00      0.00      0.00         9
+   I-OBJ_DES       0.46      0.32      0.38        53
+   I-PPL_NUM       0.00      0.00      0.00         2
+       I-PRC       0.96      0.42      0.58        65
+  I-TIME_PNT       0.85      0.87      0.86       647
+  I-TIME_PRD       0.84      0.87      0.86       156
+       I-TRP       0.86      0.17      0.28        36
+           O       0.96      0.98      0.97     19119
+
+ avg / total       0.92      0.93      0.92     23120
+
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.87       0.77      0.82        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT     0.68       0.70      0.69       399
+   OBJ_NUM     0.46       0.79      0.58        14
+       PRC     0.59       0.56      0.57        61
+       INT     0.73       0.68      0.70       453
+       CTX     1.00       0.08      0.14        66
+  TIME_PRD     0.73       0.75      0.74       122
+      DEST     0.62       0.73      0.67       523
+   PPL_NUM     0.76       0.90      0.82       124
+   OBJ_DES     0.33       0.16      0.22        37
+       TRP     0.42       0.14      0.21        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.51       0.52      0.51        50
+
+avg / total     0.63      0.62      0.61      2068
+ - f1: 65.10
+63/63 [==============================] - 113s 2s/step - loss: 244.7168
+Epoch 13/15
+62/63 [============================>.] - ETA: 1s - loss: 246.3528  
+Tag-based evaluation.
+              precision    recall  f1-score   support
+
+B-ACCOM_NAME       0.33      0.03      0.06        31
+       B-BRD       0.00      0.00      0.00         7
+       B-CTT       0.86      0.73      0.79        26
+       B-CTX       1.00      0.32      0.48        66
+      B-DEST       0.69      0.78      0.73       523
+       B-DPT       1.00      0.04      0.08        97
+       B-INT       0.83      0.75      0.79       453
+       B-OBJ       0.49      0.60      0.54        50
+   B-OBJ_DES       0.58      0.38      0.46        37
+   B-OBJ_NUM       0.55      0.79      0.65        14
+   B-PPL_NUM       0.81      0.90      0.85       124
+       B-PRC       0.83      0.79      0.81        61
+  B-TIME_PNT       0.83      0.85      0.84       399
+  B-TIME_PRD       0.79      0.82      0.80       122
+       B-TRP       0.72      0.36      0.48        58
+I-ACCOM_NAME       0.00      0.00      0.00        27
+       I-BRD       0.00      0.00      0.00         6
+       I-CTT       0.92      0.88      0.90        74
+       I-CTX       0.94      0.28      0.44       109
+      I-DEST       0.66      0.74      0.70       376
+       I-DPT       1.00      0.02      0.04        97
+       I-INT       0.77      0.73      0.75       276
+       I-OBJ       0.00      0.00      0.00         9
+   I-OBJ_DES       0.49      0.40      0.44        53
+   I-PPL_NUM       0.00      0.00      0.00         2
+       I-PRC       0.93      0.42      0.57        65
+  I-TIME_PNT       0.86      0.87      0.86       647
+  I-TIME_PRD       0.84      0.88      0.86       156
+       I-TRP       0.87      0.36      0.51        36
+           O       0.96      0.98      0.97     19119
+
+ avg / total       0.93      0.93      0.92     23120
+
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.86       0.73      0.79        26
+       DPT     0.50       0.02      0.04        97
+  TIME_PNT     0.69       0.71      0.70       399
+   OBJ_NUM     0.55       0.79      0.65        14
+       PRC     0.57       0.54      0.55        61
+       INT     0.76       0.68      0.72       453
+       CTX     0.90       0.29      0.44        66
+  TIME_PRD     0.72       0.75      0.74       122
+      DEST     0.66       0.75      0.70       523
+   PPL_NUM     0.80       0.90      0.85       124
+   OBJ_DES     0.33       0.22      0.26        37
+       TRP     0.59       0.29      0.39        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.43       0.52      0.47        50
+
+avg / total     0.67      0.64      0.64      2068
+ - f1: 66.95
+63/63 [==============================] - 124s 2s/step - loss: 243.7085
+Epoch 14/15
+62/63 [============================>.] - ETA: 1s - loss: 245.3178  
+Tag-based evaluation.
+              precision    recall  f1-score   support
+
+B-ACCOM_NAME       0.29      0.06      0.11        31
+       B-BRD       0.00      0.00      0.00         7
+       B-CTT       0.80      0.77      0.78        26
+       B-CTX       0.93      0.39      0.55        66
+      B-DEST       0.69      0.79      0.74       523
+       B-DPT       1.00      0.05      0.10        97
+       B-INT       0.84      0.77      0.80       453
+       B-OBJ       0.48      0.58      0.53        50
+   B-OBJ_DES       0.52      0.32      0.40        37
+   B-OBJ_NUM       0.55      0.86      0.67        14
+   B-PPL_NUM       0.80      0.91      0.85       124
+       B-PRC       0.85      0.77      0.81        61
+  B-TIME_PNT       0.86      0.85      0.85       399
+  B-TIME_PRD       0.81      0.87      0.84       122
+       B-TRP       0.76      0.53      0.63        58
+I-ACCOM_NAME       0.67      0.07      0.13        27
+       I-BRD       0.00      0.00      0.00         6
+       I-CTT       0.91      0.85      0.88        74
+       I-CTX       0.92      0.33      0.49       109
+      I-DEST       0.65      0.76      0.70       376
+       I-DPT       1.00      0.03      0.06        97
+       I-INT       0.79      0.75      0.77       276
+       I-OBJ       0.00      0.00      0.00         9
+   I-OBJ_DES       0.42      0.30      0.35        53
+   I-PPL_NUM       0.00      0.00      0.00         2
+       I-PRC       0.93      0.43      0.59        65
+  I-TIME_PNT       0.86      0.87      0.87       647
+  I-TIME_PRD       0.83      0.92      0.87       156
+       I-TRP       0.77      0.47      0.59        36
+           O       0.96      0.98      0.97     19119
+
+ avg / total       0.93      0.93      0.93     23120
+
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.80       0.77      0.78        26
+       DPT     0.60       0.03      0.06        97
+  TIME_PNT     0.72       0.71      0.72       399
+   OBJ_NUM     0.50       0.79      0.61        14
+       PRC     0.60       0.54      0.57        61
+       INT     0.78       0.71      0.74       453
+       CTX     0.79       0.33      0.47        66
+  TIME_PRD     0.76       0.81      0.78       122
+      DEST     0.65       0.75      0.70       523
+   PPL_NUM     0.79       0.90      0.84       124
+   OBJ_DES     0.30       0.19      0.23        37
+       TRP     0.63       0.45      0.53        58
+       OBJ     0.42       0.50      0.45        50
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.14       0.03      0.05        31
+
+avg / total     0.69      0.66      0.65      2068
+ - f1: 68.23
+63/63 [==============================] - 109s 2s/step - loss: 242.6780
+Epoch 15/15
+62/63 [============================>.] - ETA: 1s - loss: 244.4242  
+Tag-based evaluation.
+              precision    recall  f1-score   support
+
+B-ACCOM_NAME       0.40      0.06      0.11        31
+       B-BRD       0.00      0.00      0.00         7
+       B-CTT       0.84      0.81      0.82        26
+       B-CTX       0.81      0.44      0.57        66
+      B-DEST       0.72      0.76      0.74       523
+       B-DPT       1.00      0.08      0.15        97
+       B-INT       0.86      0.76      0.80       453
+       B-OBJ       0.54      0.64      0.59        50
+   B-OBJ_DES       0.52      0.41      0.45        37
+   B-OBJ_NUM       0.71      0.86      0.77        14
+   B-PPL_NUM       0.83      0.89      0.86       124
+       B-PRC       0.87      0.79      0.83        61
+  B-TIME_PNT       0.86      0.85      0.86       399
+  B-TIME_PRD       0.81      0.87      0.84       122
+       B-TRP       0.81      0.60      0.69        58
+I-ACCOM_NAME       0.67      0.07      0.13        27
+       I-BRD       0.00      0.00      0.00         6
+       I-CTT       0.91      0.86      0.89        74
+       I-CTX       0.86      0.40      0.55       109
+      I-DEST       0.67      0.74      0.70       376
+       I-DPT       1.00      0.04      0.08        97
+       I-INT       0.81      0.76      0.79       276
+       I-OBJ       0.00      0.00      0.00         9
+   I-OBJ_DES       0.39      0.40      0.39        53
+   I-PPL_NUM       0.00      0.00      0.00         2
+       I-PRC       0.86      0.49      0.63        65
+  I-TIME_PNT       0.87      0.87      0.87       647
+  I-TIME_PRD       0.84      0.92      0.88       156
+       I-TRP       0.76      0.44      0.56        36
+           O       0.96      0.98      0.97     19119
+
+ avg / total       0.93      0.93      0.93     23120
+
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.84       0.81      0.82        26
+       DPT     0.50       0.04      0.08        97
+  TIME_PNT     0.73       0.72      0.72       399
+   OBJ_NUM     0.65       0.79      0.71        14
+       PRC     0.62       0.56      0.59        61
+       INT     0.81       0.72      0.76       453
+       CTX     0.69       0.38      0.49        66
+  TIME_PRD     0.76       0.81      0.78       122
+      DEST     0.69       0.73      0.71       523
+   PPL_NUM     0.83       0.88      0.85       124
+   OBJ_DES     0.31       0.24      0.27        37
+       TRP     0.65       0.48      0.55        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.20       0.03      0.06        31
+       OBJ     0.47       0.56      0.51        50
+
+avg / total     0.70      0.66      0.67      2068
+ - f1: 69.51
+63/63 [==============================] - 121s 2s/step - loss: 241.7958
+
+Tag-based evaluation.
+              precision    recall  f1-score   support
+
+B-ACCOM_NAME       0.64      0.05      0.09       139
+       B-BRD       0.00      0.00      0.00         7
+       B-CTT       0.96      0.84      0.90        98
+       B-CTX       0.71      0.15      0.25        33
+      B-DEST       0.74      0.78      0.76       591
+       B-DPT       0.75      0.10      0.18        29
+       B-INT       0.90      0.86      0.88       466
+       B-OBJ       0.81      0.79      0.80       154
+   B-OBJ_DES       0.58      0.43      0.49       141
+   B-OBJ_NUM       0.92      0.90      0.91        81
+   B-PPL_NUM       0.83      0.93      0.87       267
+       B-PRC       0.92      0.85      0.88       112
+  B-TIME_PNT       0.91      0.93      0.92       604
+  B-TIME_PRD       0.84      0.96      0.89       137
+       B-TRP       0.81      0.53      0.64        32
+I-ACCOM_NAME       0.00      0.00      0.00        89
+       I-BRD       0.00      0.00      0.00         1
+       I-CTT       0.97      0.95      0.96       250
+       I-CTX       0.80      0.17      0.29        69
+      I-DEST       0.76      0.74      0.75       483
+       I-DPT       1.00      0.05      0.10        20
+       I-INT       0.72      0.79      0.75        98
+       I-OBJ       0.00      0.00      0.00        23
+   I-OBJ_DES       0.60      0.36      0.45       225
+       I-PRC       0.79      0.73      0.76        52
+  I-TIME_PNT       0.93      0.97      0.95      1033
+  I-TIME_PRD       0.80      0.95      0.87       157
+       I-TRP       0.80      0.80      0.80        15
+           O       0.95      0.97      0.96     18352
+
+ avg / total       0.92      0.93      0.92     23758
+
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.95       0.83      0.89        98
+       DPT     0.75       0.10      0.18        29
+  TIME_PNT     0.86       0.89      0.88       604
+   OBJ_NUM     0.91       0.89      0.90        81
+       PRC     0.80       0.73      0.76       112
+       INT     0.87       0.83      0.85       466
+       CTX     0.57       0.12      0.20        33
+  TIME_PRD     0.76       0.87      0.81       137
+      DEST     0.72       0.75      0.73       591
+   PPL_NUM     0.83       0.93      0.87       267
+   OBJ_DES     0.38       0.28      0.32       141
+       TRP     0.76       0.50      0.60        32
+       OBJ     0.72       0.71      0.71       154
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.27       0.02      0.04       139
+
+avg / total     0.76      0.74      0.74      2891
+ - f1: 77.09

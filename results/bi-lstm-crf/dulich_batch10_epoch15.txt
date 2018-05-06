@@ -1,0 +1,705 @@
+tungnt244@tungnt244:~/Downloads/anago-master$ python run.py
+Using TensorFlow backend.
+2018-05-04 09:07:17.535830: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+Epoch 1/15
+62/63 [============================>.] - ETA: 1s - loss: 330.4707Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.00       0.00      0.00        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT     0.00       0.00      0.00       399
+   OBJ_NUM     0.00       0.00      0.00        14
+       PRC     0.00       0.00      0.00        61
+       INT     0.00       0.00      0.00       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.00       0.00      0.00       122
+      DEST     0.00       0.00      0.00       523
+   PPL_NUM     0.00       0.00      0.00       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.00       0.00      0.00        50
+
+avg / total     0.00      0.00      0.00      2068
+63/63 [==============================] - 85s 1s/step - loss: 327.1847
+Epoch 2/15
+62/63 [============================>.] - ETA: 1s - loss: 295.0352Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.00       0.00      0.00        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT     0.00       0.00      0.00       399
+   OBJ_NUM     0.00       0.00      0.00        14
+       PRC     0.00       0.00      0.00        61
+       INT     0.00       0.00      0.00       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.00       0.00      0.00       122
+      DEST     0.00       0.00      0.00       523
+   PPL_NUM     0.00       0.00      0.00       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.00       0.00      0.00        50
+
+avg / total     0.00      0.00      0.00      2068
+63/63 [==============================] - 79s 1s/step - loss: 292.1510
+Epoch 3/15
+62/63 [============================>.] - ETA: 1s - loss: 281.3206Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.00       0.00      0.00        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT    47.70      28.57     35.74       399
+   OBJ_NUM     0.00       0.00      0.00        14
+       PRC     0.00       0.00      0.00        61
+       INT    14.74      17.44     15.98       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.00       0.00      0.00       122
+      DEST     9.22      10.33      9.74       523
+   PPL_NUM     0.00       0.00      0.00       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.00       0.00      0.00        50
+
+avg / total    14.76     11.94     12.86      2068
+63/63 [==============================] - 85s 1s/step - loss: 278.4886
+Epoch 4/15
+62/63 [============================>.] - ETA: 1s - loss: 272.8995Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.00       0.00      0.00        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT    43.28      50.88     46.77       399
+   OBJ_NUM     0.00       0.00      0.00        14
+       PRC     0.00       0.00      0.00        61
+       INT    24.89      36.64     29.64       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.00       0.00      0.00       122
+      DEST    15.56      32.70     21.09       523
+   PPL_NUM     0.00       0.00      0.00       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.00       0.00      0.00        50
+
+avg / total    17.74     26.11     20.85      2068
+63/63 [==============================] - 91s 1s/step - loss: 270.1391
+Epoch 5/15
+62/63 [============================>.] - ETA: 1s - loss: 267.1324Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.00       0.00      0.00        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT    53.20      60.40     56.57       399
+   OBJ_NUM     0.00       0.00      0.00        14
+       PRC     0.00       0.00      0.00        61
+       INT    36.22      41.50     38.68       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.00       0.00      0.00       122
+      DEST    27.01      55.26     36.28       523
+   PPL_NUM    49.24      52.42     50.78       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.00       0.00      0.00        50
+
+avg / total    27.98     37.86     31.61      2068
+63/63 [==============================] - 90s 1s/step - loss: 264.3860
+Epoch 6/15
+62/63 [============================>.] - ETA: 1s - loss: 261.8944Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    80.00      30.77     44.44        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT    50.00      62.91     55.72       399
+   OBJ_NUM     0.00       0.00      0.00        14
+       PRC    36.84      11.48     17.50        61
+       INT    40.87      45.47     43.05       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD    43.75       5.74     10.14       122
+      DEST    35.15      59.27     44.13       523
+   PPL_NUM    49.46      73.39     59.09       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.00       0.00      0.00        50
+
+avg / total    35.13     42.55     36.56      2068
+63/63 [==============================] - 89s 1s/step - loss: 259.1610
+Epoch 7/15
+62/63 [============================>.] - ETA: 1s - loss: 258.0371Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    85.71      46.15     60.00        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT    57.30      63.91     60.43       399
+   OBJ_NUM    85.71      42.86     57.14        14
+       PRC    42.86      29.51     34.95        61
+      DEST    44.54      62.33     51.95       523
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD    53.25      33.61     41.21       122
+       INT    61.12      55.19     58.00       453
+   PPL_NUM    57.23      79.84     66.67       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ    77.78      14.00     23.73        50
+
+avg / total    47.08     49.03     46.68      2068
+63/63 [==============================] - 88s 1s/step - loss: 255.3248
+Epoch 8/15
+62/63 [============================>.] - ETA: 1s - loss: 254.9119Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    73.91      65.38     69.39        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT    59.33      66.17     62.56       399
+   OBJ_NUM    84.62      78.57     81.48        14
+       PRC    41.18      34.43     37.50        61
+       INT    63.68      59.60     61.57       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD    62.28      58.20     60.17       122
+      DEST    49.36      66.73     56.75       523
+   PPL_NUM    61.49      79.84     69.47       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ    81.82      36.00     50.00        50
+
+avg / total    49.94     54.16     51.36      2068
+63/63 [==============================] - 88s 1s/step - loss: 252.2114
+Epoch 9/15
+62/63 [============================>.] - ETA: 1s - loss: 252.5093Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    73.08      73.08     73.08        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT    64.94      69.17     66.99       399
+   OBJ_NUM    75.00      85.71     80.00        14
+       PRC    46.55      44.26     45.38        61
+       INT    69.79      59.16     64.04       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD    65.87      68.03     66.94       122
+      DEST    54.42      67.11     60.10       523
+   PPL_NUM    66.00      79.84     72.26       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ    56.76      42.00     48.28        50
+
+avg / total    53.60     55.90     54.40      2068
+63/63 [==============================] - 88s 1s/step - loss: 249.8280
+Epoch 10/15
+62/63 [============================>.] - ETA: 1s - loss: 250.6541Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    84.00      80.77     82.35        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT    66.06      72.18     68.98       399
+   OBJ_NUM    75.00      85.71     80.00        14
+       PRC    50.94      44.26     47.37        61
+       INT    71.64      64.68     67.98       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD    66.92      71.31     69.05       122
+      DEST    54.96      70.94     61.94       523
+   PPL_NUM    67.52      85.48     75.44       124
+   OBJ_DES    14.29       2.70      4.55        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ    53.33      48.00     50.53        50
+
+avg / total    54.95     59.48     56.74      2068
+63/63 [==============================] - 89s 1s/step - loss: 247.9805
+Epoch 11/15
+62/63 [============================>.] - ETA: 1s - loss: 248.9590Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    88.00      84.62     86.27        26
+       DPT   100.00       1.03      2.04        97
+  TIME_PNT    68.16      72.43     70.23       399
+   OBJ_NUM    66.67      85.71     75.00        14
+       PRC    53.45      50.82     52.10        61
+       INT    74.57      66.67     70.40       453
+       CTX   100.00       3.03      5.88        66
+  TIME_PRD    70.63      72.95     71.77       122
+      DEST    59.52      71.13     64.81       523
+   PPL_NUM    71.05      87.10     78.26       124
+   OBJ_DES    17.65       8.11     11.11        37
+       TRP     0.00       0.00      0.00        58
+       OBJ    47.76      64.00     54.70        50
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+
+avg / total    65.45     61.07     59.22      2068
+63/63 [==============================] - 91s 1s/step - loss: 246.2938
+Epoch 12/15
+62/63 [============================>.] - ETA: 1s - loss: 247.3460Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    95.45      80.77     87.50        26
+       DPT   100.00       3.09      6.00        97
+  TIME_PNT    70.17      73.68     71.88       399
+   OBJ_NUM    66.67      85.71     75.00        14
+       PRC    56.90      54.10     55.46        61
+       INT    77.95      67.11     72.12       453
+       CTX   100.00      27.27     42.86        66
+  TIME_PRD    74.79      72.95     73.86       122
+      DEST    61.25      71.32     65.90       523
+   PPL_NUM    73.97      87.10     80.00       124
+   OBJ_DES    34.78      21.62     26.67        37
+       TRP    37.50       5.17      9.09        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ    46.27      62.00     52.99        50
+
+avg / total    68.95     62.72     62.39      2068
+63/63 [==============================] - 91s 1s/step - loss: 244.6979
+Epoch 13/15
+62/63 [============================>.] - ETA: 1s - loss: 246.2539Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    90.91      76.92     83.33        26
+       DPT   100.00       4.12      7.92        97
+  TIME_PNT    73.92      73.18     73.55       399
+   OBJ_NUM    68.42      92.86     78.79        14
+       PRC    52.73      47.54     50.00        61
+       INT    80.62      68.87     74.29       453
+       CTX    84.00      31.82     46.15        66
+  TIME_PRD    80.16      82.79     81.45       122
+      DEST    62.33      70.55     66.19       523
+   PPL_NUM    70.89      90.32     79.43       124
+   OBJ_DES    32.35      29.73     30.99        37
+       TRP    63.64      12.07     20.29        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ    44.29      62.00     51.67        50
+
+avg / total    70.63     63.93     64.04      2068
+63/63 [==============================] - 91s 1s/step - loss: 243.6030
+Epoch 14/15
+62/63 [============================>.] - ETA: 1s - loss: 245.2459Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    88.00      84.62     86.27        26
+       DPT   100.00       4.12      7.92        97
+  TIME_PNT    74.68      73.18     73.92       399
+   OBJ_NUM    70.00     100.00     82.35        14
+       PRC    58.49      50.82     54.39        61
+       INT    81.10      68.21     74.10       453
+       CTX    65.62      31.82     42.86        66
+  TIME_PRD    82.40      84.43     83.40       122
+      DEST    64.48      71.51     67.82       523
+   PPL_NUM    76.19      90.32     82.66       124
+   OBJ_DES    31.25      27.03     28.99        37
+       TRP    68.42      22.41     33.77        58
+       OBJ    45.83      66.00     54.10        50
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+
+avg / total    71.59     64.70     65.28      2068
+63/63 [==============================] - 91s 1s/step - loss: 242.6059
+Epoch 15/15
+62/63 [============================>.] - ETA: 1s - loss: 244.3366Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    88.00      84.62     86.27        26
+       DPT    63.16      12.37     20.69        97
+  TIME_PNT    75.89      74.94     75.41       399
+   OBJ_NUM    63.64     100.00     77.78        14
+       PRC    57.41      50.82     53.91        61
+       INT    80.71      70.20     75.09       453
+       CTX    64.86      36.36     46.60        66
+  TIME_PRD    79.55      86.07     82.68       122
+      DEST    66.73      71.32     68.95       523
+   PPL_NUM    76.51      91.94     83.52       124
+   OBJ_DES    30.95      35.14     32.91        37
+       TRP    63.64      36.21     46.15        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME    12.50       3.23      5.13        31
+       OBJ    41.56      64.00     50.39        50
+
+avg / total    70.27     66.68     67.16      2068
+63/63 [==============================] - 91s 1s/step - loss: 241.7046
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    92.31      73.47     81.82        98
+       DPT    33.33       3.45      6.25        29
+  TIME_PNT    86.15      89.57     87.82       604
+   OBJ_NUM    90.59      95.06     92.77        81
+       PRC    66.35      61.61     63.89       112
+       INT    87.33      82.83     85.02       466
+       CTX    45.45      15.15     22.73        33
+  TIME_PRD    77.07      88.32     82.31       137
+      DEST    71.94      75.47     73.66       591
+   PPL_NUM    79.38      96.63     87.16       267
+   OBJ_DES    36.67      31.21     33.72       141
+       TRP    76.47      40.62     53.06        32
+       OBJ    67.25      74.68     70.77       154
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME    30.77       2.88      5.26       139
+
+avg / total    74.55     74.44     73.49      2891
+tungnt244@tungnt244:~/Downloads/anago-master$ ^C
+tungnt244@tungnt244:~/Downloads/anago-master$ python run.py
+Using TensorFlow backend.
+2018-05-04 09:46:12.157747: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+Epoch 1/15
+ 25/126 [====>.........................] - ETA: 1:04 - loss: 324.1653^CTraceback (most recent call last):
+  File "run.py", line 7, in <module>
+    model.train(x_train, y_train, x_valid, y_valid)
+  File "/home/tungnt244/Downloads/anago-master/anago/wrapper.py", line 50, in train
+    trainer.train(x_train, y_train, x_valid, y_valid)
+  File "/home/tungnt244/Downloads/anago-master/anago/trainer.py", line 51, in train
+    callbacks=callbacks)
+  File "/usr/local/lib/python2.7/dist-packages/keras/legacy/interfaces.py", line 91, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/keras/engine/training.py", line 2177, in fit_generator
+    class_weight=class_weight)
+  File "/usr/local/lib/python2.7/dist-packages/keras/engine/training.py", line 1849, in train_on_batch
+    outputs = self.train_function(ins)
+  File "/usr/local/lib/python2.7/dist-packages/keras/backend/tensorflow_backend.py", line 2475, in __call__
+    **self.session_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 889, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1120, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1317, in _do_run
+    options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1323, in _do_call
+    return fn(*args)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1302, in _run_fn
+    status, run_metadata)
+KeyboardInterrupt
+tungnt244@tungnt244:~/Downloads/anago-master$ python run.py
+Using TensorFlow backend.
+2018-05-04 09:47:38.266859: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+Epoch 1/15
+125/126 [============================>.] - ETA: 0s - loss: 251.9127Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.00       0.00      0.00        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT     0.00       0.00      0.00       399
+   OBJ_NUM     0.00       0.00      0.00        14
+       PRC     0.00       0.00      0.00        61
+       INT     0.00       0.00      0.00       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.00       0.00      0.00       122
+      DEST     4.63       0.96      1.58       523
+   PPL_NUM     0.00       0.00      0.00       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.00       0.00      0.00        50
+
+avg / total     1.17      0.24      0.40      2068
+126/126 [==============================] - 91s 723ms/step - loss: 250.6262
+Epoch 2/15
+125/126 [============================>.] - ETA: 0s - loss: 218.6342Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT     0.00       0.00      0.00        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT    44.74      50.13     47.28       399
+   OBJ_NUM     0.00       0.00      0.00        14
+       PRC     0.00       0.00      0.00        61
+       INT    35.96      23.18     28.19       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD     0.00       0.00      0.00       122
+      DEST    30.92      35.95     33.24       523
+   PPL_NUM     0.00       0.00      0.00       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       OBJ     0.00       0.00      0.00        50
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+
+avg / total    24.33     23.84     23.70      2068
+126/126 [==============================] - 90s 716ms/step - loss: 217.5364
+Epoch 3/15
+125/126 [============================>.] - ETA: 0s - loss: 208.8762Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    50.00      19.23     27.78        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT    53.98      61.15     57.34       399
+   OBJ_NUM     0.00       0.00      0.00        14
+       PRC    45.45       8.20     13.89        61
+       INT    59.43      50.77     54.76       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD    16.67       0.82      1.56       122
+      DEST    44.61      56.98     50.04       523
+   PPL_NUM    63.64      28.23     39.11       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.00       0.00      0.00        50
+
+avg / total    41.48     39.56     38.91      2068
+126/126 [==============================] - 90s 718ms/step - loss: 207.7992
+Epoch 4/15
+125/126 [============================>.] - ETA: 0s - loss: 201.8777Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    68.00      65.38     66.67        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT    68.07      64.66     66.32       399
+   OBJ_NUM   100.00      14.29     25.00        14
+       PRC    44.44      19.67     27.27        61
+       INT    55.13      56.95     56.03       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD    56.94      67.21     61.65       122
+      DEST    51.62      67.11     58.35       523
+   PPL_NUM    67.21      66.13     66.67       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ     0.00       0.00      0.00        50
+
+avg / total    48.50     51.35     49.27      2068
+126/126 [==============================] - 95s 752ms/step - loss: 200.8210
+Epoch 5/15
+125/126 [============================>.] - ETA: 0s - loss: 197.5984Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    76.92      76.92     76.92        26
+       DPT     0.00       0.00      0.00        97
+  TIME_PNT    67.60      66.42     67.00       399
+   OBJ_NUM    71.43      71.43     71.43        14
+       PRC    47.83      36.07     41.12        61
+       INT    58.06      62.03     59.98       453
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD    62.86      72.13     67.18       122
+      DEST    55.77      73.04     63.25       523
+   PPL_NUM    70.20      85.48     77.09       124
+   OBJ_DES     0.00       0.00      0.00        37
+       TRP     0.00       0.00      0.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ    69.23      18.00     28.57        50
+
+avg / total    52.32     57.21     54.00      2068
+126/126 [==============================] - 93s 737ms/step - loss: 196.5506
+Epoch 6/15
+125/126 [============================>.] - ETA: 0s - loss: 194.4845Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    80.00      76.92     78.43        26
+       DPT    50.00       1.03      2.02        97
+  TIME_PNT    69.60      69.42     69.51       399
+   OBJ_NUM    64.71      78.57     70.97        14
+       PRC    48.98      39.34     43.64        61
+      DEST    57.70      76.67     65.85       523
+       CTX     0.00       0.00      0.00        66
+  TIME_PRD    67.63      77.05     72.03       122
+       INT    59.15      64.90     61.89       453
+   PPL_NUM    73.20      90.32     80.87       124
+   OBJ_DES    50.00       2.70      5.13        37
+       TRP    33.33       1.72      3.28        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ    64.71      22.00     32.84        50
+
+avg / total    57.98     60.30     56.55      2068
+126/126 [==============================] - 100s 796ms/step - loss: 193.4419
+Epoch 7/15
+125/126 [============================>.] - ETA: 0s - loss: 192.0654Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    76.92      76.92     76.92        26
+       DPT    14.29       1.03      1.92        97
+  TIME_PNT    71.28      69.67     70.47       399
+   OBJ_NUM    63.16      85.71     72.73        14
+       PRC    56.25      44.26     49.54        61
+       INT    62.50      71.74     66.80       453
+       CTX    40.00       6.06     10.53        66
+  TIME_PRD    72.87      77.05     74.90       122
+      DEST    60.36      77.44     67.84       523
+   PPL_NUM    70.55      92.74     80.14       124
+   OBJ_DES    42.86       8.11     13.64        37
+       TRP    58.82      17.24     26.67        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME     0.00       0.00      0.00        31
+       OBJ    59.09      52.00     55.32        50
+
+avg / total    60.08     63.83     60.29      2068
+126/126 [==============================] - 94s 748ms/step - loss: 191.0372
+Epoch 8/15
+125/126 [============================>.] - ETA: 0s - loss: 190.1741Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    76.92      76.92     76.92        26
+       DPT    33.33       5.15      8.93        97
+  TIME_PNT    73.00      73.18     73.09       399
+   OBJ_NUM    66.67      85.71     75.00        14
+       PRC    63.27      50.82     56.36        61
+       INT    68.38      76.38     72.16       453
+       CTX    60.71      25.76     36.17        66
+  TIME_PRD    77.87      77.87     77.87       122
+      DEST    62.21      77.44     68.99       523
+   PPL_NUM    75.32      93.55     83.45       124
+   OBJ_DES    38.46      13.51     20.00        37
+       TRP    73.08      32.76     45.24        58
+       OBJ    49.15      58.00     53.21        50
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME    25.00       3.23      5.71        31
+
+avg / total    64.99     67.36     64.66      2068
+126/126 [==============================] - 96s 763ms/step - loss: 189.1620
+Epoch 9/15
+125/126 [============================>.] - ETA: 0s - loss: 188.8027Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    76.00      73.08     74.51        26
+       DPT    51.43      18.56     27.27        97
+  TIME_PNT    73.82      74.19     74.00       399
+   OBJ_NUM    59.09      92.86     72.22        14
+       PRC    62.50      49.18     55.05        61
+       INT    64.76      77.48     70.55       453
+       CTX    58.97      34.85     43.81        66
+  TIME_PRD    76.74      81.15     78.88       122
+      DEST    62.88      78.39     69.79       523
+   PPL_NUM    74.21      95.16     83.39       124
+   OBJ_DES    43.75      18.92     26.42        37
+       TRP    65.22      51.72     57.69        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME    50.00       6.45     11.43        31
+       OBJ    46.03      58.00     51.33        50
+
+avg / total    65.28     69.87     66.27      2068
+126/126 [==============================] - 102s 808ms/step - loss: 187.7897
+Epoch 10/15
+125/126 [============================>.] - ETA: 0s - loss: 187.7236Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    76.00      73.08     74.51        26
+       DPT    77.78      28.87     42.11        97
+  TIME_PNT    74.69      74.69     74.69       399
+   OBJ_NUM    65.00      92.86     76.47        14
+       PRC    71.74      54.10     61.68        61
+       INT    67.87      78.81     72.93       453
+       CTX    63.16      36.36     46.15        66
+  TIME_PRD    82.40      84.43     83.40       122
+      DEST    66.72      78.20     72.01       523
+   PPL_NUM    79.05      94.35     86.03       124
+   OBJ_DES    33.33      18.92     24.14        37
+       TRP    70.00      60.34     64.81        58
+       OBJ    45.45      60.00     51.72        50
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME    66.67       6.45     11.76        31
+
+avg / total    69.59     71.32     69.07      2068
+126/126 [==============================] - 103s 816ms/step - loss: 186.7077
+Epoch 11/15
+125/126 [============================>.] - ETA: 0s - loss: 186.9631Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    80.77      80.77     80.77        26
+       DPT    61.97      45.36     52.38        97
+  TIME_PNT    76.42      73.93     75.16       399
+   OBJ_NUM    70.59      85.71     77.42        14
+       PRC    62.26      54.10     57.89        61
+       INT    70.06      79.03     74.27       453
+       CTX    57.78      39.39     46.85        66
+  TIME_PRD    83.33      81.97     82.64       122
+      DEST    69.45      77.82     73.40       523
+   PPL_NUM    79.33      95.97     86.86       124
+   OBJ_DES    55.56      40.54     46.88        37
+       TRP    66.67      62.07     64.29        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME    50.00       9.68     16.22        31
+       OBJ    50.88      58.00     54.21        50
+
+avg / total    70.25     72.44     70.81      2068
+126/126 [==============================] - 103s 820ms/step - loss: 185.9542
+Epoch 12/15
+125/126 [============================>.] - ETA: 0s - loss: 185.9727Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    80.77      80.77     80.77        26
+       DPT    62.20      52.58     56.98        97
+  TIME_PNT    77.18      75.44     76.30       399
+   OBJ_NUM    82.35     100.00     90.32        14
+       PRC    66.04      57.38     61.40        61
+       INT    68.51      79.25     73.49       453
+       CTX    51.16      33.33     40.37        66
+  TIME_PRD    83.74      84.43     84.08       122
+      DEST    69.62      76.67     72.98       523
+   PPL_NUM    79.45      93.55     85.93       124
+   OBJ_DES    53.57      40.54     46.15        37
+       TRP    64.15      58.62     61.26        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME    50.00       9.68     16.22        31
+       OBJ    53.97      68.00     60.18        50
+
+avg / total    70.09     72.97     71.03      2068
+126/126 [==============================] - 102s 807ms/step - loss: 184.9675
+Epoch 13/15
+125/126 [============================>.] - ETA: 0s - loss: 185.4339Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    82.61      73.08     77.55        26
+       DPT    60.98      51.55     55.87        97
+  TIME_PNT    79.84      76.44     78.10       399
+   OBJ_NUM    82.35     100.00     90.32        14
+       PRC    67.92      59.02     63.16        61
+      DEST    72.27      77.25     74.68       523
+       CTX    53.33      36.36     43.24        66
+  TIME_PRD    84.55      85.25     84.90       122
+       INT    71.31      79.03     74.97       453
+   PPL_NUM    78.95      96.77     86.96       124
+   OBJ_DES    48.48      43.24     45.71        37
+       TRP    68.97      68.97     68.97        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME    42.86       9.68     15.79        31
+       OBJ    54.10      66.00     59.46        50
+
+avg / total    71.94     73.79     72.48      2068
+126/126 [==============================] - 105s 836ms/step - loss: 184.4302
+Epoch 14/15
+125/126 [============================>.] - ETA: 0s - loss: 184.8174Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    76.00      73.08     74.51        26
+       DPT    59.14      56.70     57.89        97
+  TIME_PNT    75.18      76.69     75.93       399
+   OBJ_NUM    77.78     100.00     87.50        14
+       PRC    64.29      59.02     61.54        61
+       INT    65.43      81.90     72.75       453
+       CTX    50.00      37.88     43.10        66
+  TIME_PRD    86.61      79.51     82.91       122
+      DEST    69.90      78.59     73.99       523
+   PPL_NUM    79.19      95.16     86.45       124
+   OBJ_DES    51.28      54.05     52.63        37
+       TRP    62.90      67.24     65.00        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME    50.00      12.90     20.51        31
+       OBJ    50.70      72.00     59.50        50
+
+avg / total    68.78     75.00     71.32      2068
+126/126 [==============================] - 104s 827ms/step - loss: 183.8133
+Epoch 15/15
+125/126 [============================>.] - ETA: 0s - loss: 184.5144Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    81.48      84.62     83.02        26
+       DPT    68.67      58.76     63.33        97
+  TIME_PNT    78.26      76.69     77.47       399
+   OBJ_NUM    77.78     100.00     87.50        14
+       PRC    61.82      55.74     58.62        61
+       INT    69.50      79.47     74.15       453
+       CTX    53.66      33.33     41.12        66
+  TIME_PRD    83.74      84.43     84.08       122
+      DEST    70.17      79.16     74.39       523
+   PPL_NUM    80.56      93.55     86.57       124
+   OBJ_DES    43.90      48.65     46.15        37
+       TRP    67.21      70.69     68.91        58
+       BRD     0.00       0.00      0.00         7
+ACCOM_NAME    50.00      12.90     20.51        31
+       OBJ    51.43      72.00     60.00        50
+
+avg / total    70.81     74.81     72.32      2068
+126/126 [==============================] - 100s 796ms/step - loss: 183.5088
+Chunk-based evaluation.
+           precision     recall   f1-score   support
+       CTT    94.44      86.73     90.43        98
+       DPT    60.87      48.28     53.85        29
+  TIME_PNT    88.98      92.22     90.57       604
+   OBJ_NUM    88.64      96.30     92.31        81
+       PRC    78.76      79.46     79.11       112
+       INT    77.22      89.48     82.90       466
+       CTX    33.33      21.21     25.93        33
+  TIME_PRD    81.17      91.24     85.91       137
+      DEST    67.96      77.16     72.27       591
+   PPL_NUM    83.99      96.25     89.70       267
+   OBJ_DES    54.17      46.10     49.81       141
+       TRP    65.71      71.88     68.66        32
+       OBJ    73.22      87.01     79.53       154
+       BRD   100.00      28.57     44.44         7
+ACCOM_NAME    33.33       3.60      6.49       139
+
+avg / total    75.37     80.04     76.81      2891
